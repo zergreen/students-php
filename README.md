@@ -1,6 +1,12 @@
 # students-php
 crud student with php
 
+# Intro
+null
+- index.php is started 
+- conn.php is for connect php to mysql database
+- dump_script.sql is for create database
+
 # DEMO
 
 [![IMAGE_ALT](https://w7.pngwing.com/pngs/515/163/png-transparent-hypermedia-others-miscellaneous-text-logo-thumbnail.png)](https://youtu.be/hAKdTTi-aJQ)
