@@ -12,7 +12,7 @@ $sql = "UPDATE students
 SET name='$name', mid=$mid, final=$final, sum_score=$sum, grade='$grade'
 WHERE std_id=$std_id";
 
-echo "SQL: $sql <br>";
+// echo "SQL: $sql <br>";
 
 $result = $conn->query($sql);
 
@@ -21,4 +21,6 @@ if($result){
 }else{
     echo "Opps!: Something wentwrong";
 }
+
+$conn->close();
 ?>
