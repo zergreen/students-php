@@ -1,8 +1,6 @@
 <?php 
 include "conn.php";
 
-// isset( $_POST['std_id'] ) ? $std_id = $_POST['std_id'] : $std_id = "";
-
 $std_id = $_POST['std_id'];
 $name = $_POST['name'];
 $mid = $_POST['mid'];

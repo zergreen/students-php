@@ -9,7 +9,7 @@ echo "SQL: $sql <br>";
 
 $result = $conn->query($sql);
 
-while($row = $result->fetch_assoc()){
+while ($row = $result->fetch_assoc()) {
     $name = $row['name'];
     $mid = $row['mid'];
     $final = $row['final'];
@@ -22,10 +22,12 @@ $conn->close();
 ?>
 
 <div class="container">
-        <center><h1>Update-Students</h1></center>
-        <form action="edit-verify.php" method="POST">
+    <center>
+        <h1>Update-Students</h1>
+    </center>
+    <form action="edit-verify.php" method="POST">
         <table align="center" cellpadding="10px">
-             <tbody>
+            <tbody>
                 <tr>
                     <td>รหัส</td>
                     <td><input type="text" name="std_id" value="<?php echo $std_id ?>" readonly></td>
@@ -55,9 +57,7 @@ $conn->close();
                     <!-- <td><input type="reset" value="ล้าง"></td> -->
                     <td><input type="submit" value="ส่ง"></td>
                 </tr>
-             </tbody>
-    </table>
-    
-
-        </form>
-    </div>
+            </tbody>
+        </table>
+    </form>
+</div>
